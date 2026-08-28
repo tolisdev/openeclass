@@ -7618,3 +7618,10 @@ $langWidgetsCourse = 'Course Widgets';
 $langBgColorLoginButton = 'Login button background color';
 $langTextColorLoginButton = 'Login button text color';
 $langHoverBgColorLoginButton = 'Login button hover background color';
+
+// Cadmos integration
+$langCadmosPendingCourses = 'You have course designs from Cadmos ready to create.';
+$langCadmosCreatingCourse = 'Creating course from Cadmos design';
+$langCadmosSelectCourse = 'Select Cadmos design';
+$langCadmosCreatePending = 'Create course from Cadmos';
+$langCadmosNoPendingCourses = 'No pending course designs from Cadmos were found.';

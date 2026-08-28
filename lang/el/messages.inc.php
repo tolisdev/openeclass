@@ -8338,3 +8338,10 @@ $langExistsInMyProfile = "Προστέθηκε στο προφίλ";
 // Point games
 $langHasExpired = "Έληξε";
 $langHasNotStarted = "Δεν έχει ξεκινήσει";
+
+// Cadmos integration
+$langCadmosPendingCourses = 'Έχετε σχέδια μαθημάτων από το Cadmos έτοιμα προς δημιουργία.';
+$langCadmosCreatingCourse = 'Δημιουργία μαθήματος από σχέδιο Cadmos';
+$langCadmosSelectCourse = 'Επιλογή σχεδίου Cadmos';
+$langCadmosCreatePending = 'Δημιουργία μαθήματος από Cadmos';
+$langCadmosNoPendingCourses = 'Δεν βρέθηκαν σχέδια μαθημάτων από το Cadmos προς δημιουργία.';
