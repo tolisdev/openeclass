@@ -5709,6 +5709,10 @@ function html_to_pdf($pdf_title, $course_title, $module_type_title, $html = null
                     margin:0;
                 }
 
+                #pdf-content > *:last-child {
+                    margin-bottom: 0 !important;
+                }
+
                 .header-logo,
                 .footer-logo{
                     position:absolute;
@@ -5735,8 +5739,42 @@ function html_to_pdf($pdf_title, $course_title, $module_type_title, $html = null
                 .div-profile-img,
                 .reply-post-btn,
                 .div-menu-popover,
-                .form_selection_per_user_or_question {
+                .form_selection_per_user_or_question,
+                .gauge-container {
                     display: none !important;
+                }
+
+                /* PDF page breaks */
+                .card {
+                    break-inside: avoid !important;
+                    page-break-inside: avoid !important;
+                }
+                    
+                .card-header {
+                    break-after: avoid !important;
+                    page-break-after: avoid !important;
+                }
+
+                .card-body {
+                    break-inside: auto;
+                    page-break-inside: auto;
+                }
+
+                table {
+                    page-break-inside: auto;
+                }
+
+                tr {
+                    break-inside: avoid !important;
+                    page-break-inside: avoid !important;
+                }
+
+                thead {
+                    display: table-header-group;
+                }
+
+                tfoot {
+                    display: table-footer-group;
                 }
 
             </style>
