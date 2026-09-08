@@ -83,8 +83,7 @@ if ($cadmos) {
     }
 
     // Check course creation permissions (Teacher or Department Manager)
-    $is_dep_mgr = Database::get()->querySingle("SELECT user_id FROM hierarchy_user WHERE user_id = ?d LIMIT 1", $user->id);
-    if ($user->status != USER_TEACHER && !$is_dep_mgr) {
+    if (!($user->status == USER_TEACHER or $is_departmentmanage_user)) {
         http_response_code(403);
         echo json_encode(['error' => 'User does not have course creation privileges']);
         exit;
