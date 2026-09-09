@@ -157,11 +157,6 @@ function load_js($file, $init='') {
             $head_content .= js_link('waypoints/jquery.waypoints.min.js');
             $file = 'waypoints/shortcuts/infinite.min.js';
         } elseif ($file == 'select2') {
-            // $head_content .= css_link('select2-4.0.3/css/select2.min.css') .
-            // css_link('select2-4.0.3/css/select2-bootstrap.min.css') .
-            // css_link('select2-4.0.3/css/override_select2_design.css?v=4.0-dev') .
-            // js_link('select2-4.0.3/js/select2.full.min.js');
-            // $file = "select2-4.0.3/js/i18n/$language.js";
             $head_content .= css_link('select2-4.0.13/dist/css/select2.min.css') .
             css_link('select2-4.0.13/dist/css/override_select2_design.css?v=4.0-dev') .
             js_link('select2-4.0.13/dist/js/select2.full.min.js');
@@ -5749,7 +5744,7 @@ function html_to_pdf($pdf_title, $course_title, $module_type_title, $html = null
                     break-inside: avoid !important;
                     page-break-inside: avoid !important;
                 }
-                    
+
                 .card-header {
                     break-after: avoid !important;
                     page-break-after: avoid !important;
